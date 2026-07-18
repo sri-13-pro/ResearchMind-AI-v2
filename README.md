@@ -270,50 +270,86 @@ Export (Optional)
 ```text
 ResearchMind-AI-v2/
 │
-├── app.py
-├── README.md
-├── LICENSE
-├── requirements.txt
-├── .env.example
-├── .gitignore
-│
 ├── agent/
+│   ├── README.md
+│   ├── __init__.py
 │   ├── memory.py
+│   ├── prompts.py
 │   ├── research_agent.py
 │   ├── router.py
 │   └── tools.py
 │
 ├── config/
+│   ├── README.md
+│   ├── __init__.py
+│   ├── logger.py
 │   ├── settings.py
 │   ├── validator.py
 │   └── version.py
 │
-├── services/
-│   ├── semantic_search.py
-│   ├── search_manager.py
-│   ├── pdf_processor.py
-│   ├── summarizer.py
-│   ├── comparator.py
-│   ├── keyword_extractor.py
-│   ├── literature_review.py
-│   ├── citation_generator.py
-│   ├── history_manager.py
-│   └── export_manager.py
-│
-├── llm/
-│   └── groq_client.py
-│
 ├── data/
+│   ├── README.md
 │   ├── raw/
+│   │   └── README.md
 │   ├── processed/
+│   │   └── README.md
 │   └── vector_db/
+│       └── README.md
 │
 ├── exports/
+│   ├── README.md
+│   ├── citation_20260718_211151.md
+│   ├── keywords_20260718_211213.md
+│   ├── review_20260718_211232.md
+│   └── summary_20260718_202753.md
+│
+├── llm/
+│   ├── README.md
+│   ├── __init__.py
+│   └── groq_client.py
+│
 ├── logs/
-├── assets/
-└── docs/
-```
-
+│   ├── README.md
+│   └── history.json
+│
+├── services/
+│   ├── README.md
+│   ├── __init__.py
+│   ├── bm25_search.py
+│   ├── chunker.py
+│   ├── citation_generator.py
+│   ├── comparator.py
+│   ├── dataset_loader.py
+│   ├── embedding_service.py
+│   ├── export_manager.py
+│   ├── history_manager.py
+│   ├── keyword_extractor.py
+│   ├── literature_review.py
+│   ├── metadata_store.py
+│   ├── pdf_processor.py
+│   ├── preprocessor.py
+│   ├── search_manager.py
+│   ├── semantic_search.py
+│   ├── summarizer.py
+│   └── vector_store.py
+│
+├── test/
+│   ├── README.md
+│   ├── test_bm25.py
+│   ├── test_chunker.py
+│   ├── test_groq.py
+│   ├── test_hybrid.py
+│   ├── test_metadata.py
+│   ├── test_pdf.py
+│   ├── test_search.py
+│   └── test_summarizer.py
+│
+├── .gitignore
+├── .env.example
+├── LICENSE
+├── README.md
+├── app.py
+└── requirements.txt
 ---
 
 # ⚙️ Installation
