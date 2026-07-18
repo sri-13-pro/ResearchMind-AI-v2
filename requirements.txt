@@ -1,0 +1,12 @@
+sentence-transformers
+faiss-cpu
+pandas
+numpy
+scikit-learn
+pymupdf
+groq
+python-dotenv
+yake
+sumy
+arxiv
+tqdm
